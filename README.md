@@ -6,11 +6,12 @@ The process of validating will be established through two stages entailing both 
 =======================================================================================
 
 # REASONING
-1. What makes a model suitable for high-level competence analysis? 
+1. What makes a model suitable for high-level competence analysis?                               
+
    A model more appropriate for analysis of higher competencies must go beyond mere syntax checking or determination of bugs. Its three main characteristics are: (1) Deep Code Understanding: The model must           understand the semantics and intent behind the code, rather than the letter of the statements being created. For example, the model will understand algorithms, design structures, and common logical pitfalls.      (2) Abstract Reasoning: The model must infer the student’s mental model and lack of understanding from their code. For instance, it should recognize that nested loops for a task that could be solved more          effectively through a dictionary lookup is indicative of the student’s understanding of data structures and time complexity. (3) Pedagogical Generative Skill: The model must have sufficient control to produce     open-ended, Socratic questions to encourage the student's thinking processes, as opposed to stating facts or corrections.
  
-2. How would you test whether a model generates meaningful prompts?
+3. How would you test whether a model generates meaningful prompts?
    
-3. What trade-offs might exist between accuracy, interpretability, and cost?
+4. What trade-offs might exist between accuracy, interpretability, and cost?
 
-4. Why did you choose the model you evaluated, and what are its strengths or limitations?
+5. Why did you choose the model you evaluated, and what are its strengths or limitations?
