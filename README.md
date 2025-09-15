@@ -3,7 +3,7 @@ We will start our examination of the open source models for analyzing student co
 
 The process of validating will be established through two stages entailing both an automated evaluator and a human expert evaluator. In the first step, we will construct a "golden set" of ideal assessment prompts for our dataset that will be developed by an experienced Python educator, which we will then qualitatively compare against a scoring rubric to model-generated prompts based on conceptual relevance, pedagogical value, and clarity, and then establish the baselines for the golden set of prompts. For a scalable, quantitative measure, we can first evaluate and then use to evaluate the model's outputs, a powerful proprietary model like GPT-4 to score the model-generated output prompts based on our rubric. Our validation plans will effectively triangulate the assessment and provide systematic ways to evaluate CodeLlama's ability to generate useful and meaningful prompts for high-level ability analysis and the limitations like being too direct or not capturing subtle misconceptions, which will indicate if further fine-tuning is warranted.
 
-=======================================================================================
+===========================================================================
 
 # REASONING
 1. What makes a model suitable for high-level competence analysis?                               
