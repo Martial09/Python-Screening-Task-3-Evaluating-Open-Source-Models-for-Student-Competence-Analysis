@@ -1,1 +1,16 @@
-# Python-Screening-Task-3-Evaluating-Open-Source-Models-for-Student-Competence-Analysis
+# RESEARCH PLAN
+We will start our examination of the open source models for analyzing student competence with code-specialized Large Language Models (LLMs) because they are already designed to understand and produce both code and natural language. The model we will evaluate first is Meta's CodeLlama, specifically the 13B parameter instruct-tuned version. CodeLlama has reasonable performance and resource requirements while being explicitly instructed to follow code-related commands. We will create a curated dataset of student-written Python snippets that each contain an example of a common conceptual mistake (e.g., incorrect recursion use, misunderstanding list aliasing, mutable default arguments). Once we have the dataset in place, we will engineer a constructed meta-prompt instructing CodeLlama to evaluate each student snippet and create a Socratic question (or follow-up prompt) that probes students' understanding of the concept without revealing the underlying bug.
+
+The process of validating will be established through two stages entailing both an automated evaluator and a human expert evaluator. In the first step, we will construct a "golden set" of ideal assessment prompts for our dataset that will be developed by an experienced Python educator, which we will then qualitatively compare against a scoring rubric to model-generated prompts based on conceptual relevance, pedagogical value, and clarity, and then establish the baselines for the golden set of prompts. For a scalable, quantitative measure, we can first evaluate and then use to evaluate the model's outputs, a powerful proprietary model like GPT-4 to score the model-generated output prompts based on our rubric. Our validation plans will effectively triangulate the assessment and provide systematic ways to evaluate CodeLlama's ability to generate useful and meaningful prompts for high-level ability analysis and the limitations like being too direct or not capturing subtle misconceptions, which will indicate if further fine-tuning is warranted.
+
+=======================================================================================
+
+# REASONING
+1. What makes a model suitable for high-level competence analysis? 
+   A model more appropriate for analysis of higher competencies must go beyond mere syntax checking or determination of bugs. Its three main characteristics are: (1) Deep Code Understanding: The model must           understand the semantics and intent behind the code, rather than the letter of the statements being created. For example, the model will understand algorithms, design structures, and common logical pitfalls.      (2) Abstract Reasoning: The model must infer the student’s mental model and lack of understanding from their code. For instance, it should recognize that nested loops for a task that could be solved more          effectively through a dictionary lookup is indicative of the student’s understanding of data structures and time complexity. (3) Pedagogical Generative Skill: The model must have sufficient control to produce     open-ended, Socratic questions to encourage the student's thinking processes, as opposed to stating facts or corrections.
+ 
+2. How would you test whether a model generates meaningful prompts?
+   
+3. What trade-offs might exist between accuracy, interpretability, and cost?
+
+4. Why did you choose the model you evaluated, and what are its strengths or limitations?
